@@ -3,11 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
+<!-- TODO:
+- Google Analytics
+- Get real glassware png
+- Browser testing 
+-->
+
 <Layout
 	title="Edison Hills | Curated Vintage, Modern Gifts and Creative Classrom | Cookeville, Tennesseee"
 >
 	<main>
 		<div class="banner">
+			<!-- TODO: borked on Safari -->
 			<ul>
 				<li>Curated <br />Vintage</li>
 				<li>Modern <br />Gifts</li>
@@ -224,6 +231,7 @@ import Card from "../components/Card.astro";
 											required=""
 											value=""
 											placeholder="Email Address"
+											size="10"
 										/>
 									</div>
 									<div hidden="">
@@ -398,11 +406,8 @@ import Card from "../components/Card.astro";
 		}
 
 		form#mc-embedded-subscribe-form {
+			/* TODO: too wide on mobile */
 			display: flex;
-
-			label {
-				display: block;
-			}
 
 			.mc-field-group {
 				display: flex;
@@ -421,22 +426,24 @@ import Card from "../components/Card.astro";
 			}
 
 			.email-wrapper {
-				flex: 100%;
+				flex: 1;
 				input {
-					display: flex;
-					flex: 100%;
+					flex: 1;
 					padding: 1rem;
 					margin-right: 1rem;
 				}
 			}
 
 			.button {
+				/* TODO: ugly on Safari */
+
 				background-color: var(--yellow);
 				font-weight: bold;
 				font-size: 1rem;
 				height: 3.5rem;
 				cursor: pointer;
 				border: 2px solid #dcae30;
+				flex: 0;
 
 				&:hover {
 					background-color: #ac892b;
@@ -448,6 +455,8 @@ import Card from "../components/Card.astro";
 				margin-top: 1rem;
 				padding: 1rem;
 				background: var(--green);
+				border-radius: 4px;
+				margin-right: 1rem;
 			}
 		}
 
@@ -536,7 +545,7 @@ import Card from "../components/Card.astro";
 				transform: translateY(-20%);
 
 				h1 {
-					font-size: 2rem;
+					font-size: 1.75rem;
 				}
 			}
 
