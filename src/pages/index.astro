@@ -5,15 +5,12 @@ import Card from "../components/Card.astro";
 
 <!-- TODO:
 - Google Analytics
-- Get real glassware png
-- Browser testing 
 -->
 <Layout
 	title="Edison Hills | Curated Vintage, Modern Gifts and Creative Classrom | Cookeville, Tennesseee"
 >
 	<main>
 		<div class="banner">
-			<!-- TODO: borked on Safari -->
 			<ul>
 				<li>Curated <br />Vintage</li>
 				<li>Modern <br />Gifts</li>
@@ -329,7 +326,7 @@ import Card from "../components/Card.astro";
 			padding: 4rem 0 0;
 			max-width: 1400px;
 			margin: auto;
-			background: url("/edison-hills-splash/tea-set-cutout-transparent.png") right -100px
+			background: url("/tea-set-cutout-transparent.png") right -100px
 				no-repeat;
 				background-size: 40%;
 		}
@@ -378,7 +375,7 @@ import Card from "../components/Card.astro";
 			flex: 6;
 			margin: 0 2rem;
 			height: 0;
-			background: url("/edison-hills-splash/0189abbyweeden.jpg");
+			background: url("/0189abbyweeden.jpg");
 			background-size: cover;
 			width: 100%;
 			padding-top: 70%;
@@ -410,12 +407,9 @@ import Card from "../components/Card.astro";
 		}
 
 		form#mc-embedded-subscribe-form {
-			/* TODO: too wide on mobile */
 			display: flex;
 
 			.button {
-				/* TODO: ugly on Safari */
-
 				background-color: var(--yellow);
 				font-weight: bold;
 				font-size: 1rem;
